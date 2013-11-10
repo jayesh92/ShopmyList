@@ -61,7 +61,7 @@ CREATE TABLE `listno_details` (
   `store` varchar(25) DEFAULT NULL,
   `name` varchar(25) DEFAULT NULL,
   PRIMARY KEY (`listno`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,7 +70,7 @@ CREATE TABLE `listno_details` (
 
 LOCK TABLES `listno_details` WRITE;
 /*!40000 ALTER TABLE `listno_details` DISABLE KEYS */;
-INSERT INTO `listno_details` VALUES (7,'krans4u','jayesh92','dominos','pizza'),(8,'krans4u','jayesh92','Mcd','burger'),(9,'jayesh92','krans4u','d39','pbm'),(10,'krans4u','undecided','Apollo','Hello');
+INSERT INTO `listno_details` VALUES (7,'krans4u','jayesh92','dominos','pizza'),(8,'krans4u','jayesh92','Mcd','burger'),(9,'jayesh92','krans4u','d39','pbm'),(10,'krans4u','undecided','Apollo','Hello'),(11,'krans4u','undecided','Gachibowli','Bread');
 /*!40000 ALTER TABLE `listno_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -94,7 +94,7 @@ CREATE TABLE `listno_item` (
 
 LOCK TABLES `listno_item` WRITE;
 /*!40000 ALTER TABLE `listno_item` DISABLE KEYS */;
-INSERT INTO `listno_item` VALUES (7,'behenchod'),(7,'madrchood'),(8,'brownie'),(8,'mcveggie'),(10,'bandage'),(10,'dettol');
+INSERT INTO `listno_item` VALUES (7,'biscuit'),(7,'namkeen'),(8,'brownie'),(8,'mcveggie'),(10,'bandage'),(10,'dettol');
 /*!40000 ALTER TABLE `listno_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -119,7 +119,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('jayesh92','jayesh.lahori.11.8.92@gmail.com','9581845730'),('krans4u','kdhamele@gmail.com','0000000000');
+INSERT INTO `user` VALUES ('jayesh92','jayesh.lahori.11.8.92@gmail.com','9581845730'),('krans4u','kdhamele@gmail.com','0000000000'),('mittal','mittal@mittal.com','123456789');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -135,7 +135,7 @@ CREATE TABLE `user_list` (
   `username` varchar(25) DEFAULT NULL,
   `list_no` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -144,7 +144,7 @@ CREATE TABLE `user_list` (
 
 LOCK TABLES `user_list` WRITE;
 /*!40000 ALTER TABLE `user_list` DISABLE KEYS */;
-INSERT INTO `user_list` VALUES (4,'krans4u',7),(5,'krans4u',8),(6,'krans4u',10);
+INSERT INTO `user_list` VALUES (4,'krans4u',7),(5,'krans4u',8),(6,'krans4u',10),(7,'krans4u',11);
 /*!40000 ALTER TABLE `user_list` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -157,4 +157,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-11-10  8:52:12
+-- Dump completed on 2013-11-10 13:21:51
