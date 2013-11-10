@@ -23,9 +23,13 @@ import org.json.JSONObject;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
-import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.os.Messenger;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.Menu;
@@ -45,7 +49,6 @@ public class MainActivity extends Activity {
 	public String url = "http://10.0.2.2/angelhack/view_friends.php";
 	public String url1 = "http://10.0.2.2/angelhack/view_lists.php";
 	public ActionBar actionbar;
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
@@ -61,11 +64,41 @@ public class MainActivity extends Activity {
 		h.put("AllLists", new ArrayList<list>());
 		ctx=MainActivity.this;
 		accessWebService();
+		
+		//abhishek
+		Intent intent = new Intent(this, DownloadService.class);
+		Messenger messenger = new Messenger(handler);
+		intent.putExtra("MESSENGER", messenger);
+		intent.setData(Uri.parse("http://developer.android.com/guide/components/services.html"));
+		intent.putExtra("urlpath","http://developer.android.com/guide/components/services.html");
+		startService(intent);
+		//aend
+		
 		//accessWebService1();
 
 		//while(flag==0);
 	}
 
+	//abhishek
+	   private Handler handler = new Handler() {
+			
+			public void handleMessage(Message message)
+			{
+				
+				Object path = message.obj;
+				if(message.arg1 == RESULT_OK && path !=null)
+				{
+					Toast.makeText(MainActivity.this, "Downloaded "+path.toString(), Toast.LENGTH_LONG).show();
+				}
+				else
+				{
+					Toast.makeText(MainActivity.this, "Download Failed", Toast.LENGTH_LONG).show();
+				}
+			}
+	};
+	
+
+		//aend
 	public void accessWebService() {
 		JsonWriteTask task = new JsonWriteTask();
 		// passes values for the urls string array
@@ -338,6 +371,8 @@ public class MainActivity extends Activity {
 		if(item.getItemId()==R.id.action_settings)
 		{
 			//Start Mittal/Sagar ki Activity
+			Intent intent=new Intent(MainActivity.this,MapActivity.class);
+			startActivity(intent);
 		}
 		return super.onOptionsItemSelected(item);
 
