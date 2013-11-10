@@ -34,10 +34,10 @@ public class NotifyActivity extends Activity {
 		Log.d("pos ","pos in notify activity "+pos);
 		//Log.d("pos ","pos in notify activity "+pos);
 		ArrayList< String> event=new ArrayList<String>();
-		event.add("Help jayesh92");
-		event.add("Help Hkrans4u");
-		event.add("Get Help From Mittal");
-		event.add("Get Help From Sagar");
+		event.add("Help jayesh92 Indira Nagar");
+		event.add("Help Hkrans4u Dominos");
+		event.add("Get Help From Mittal Mehandipatnam");
+		event.add("Get Help From Sagar Gachibowli");
 		for(int i=4;i<pos;i++){
 			Log.d("events","events are "+events[i]);		
 			//event.add(events[i]);

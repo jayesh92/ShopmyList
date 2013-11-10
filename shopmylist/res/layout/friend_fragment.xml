@@ -2,29 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/wall_android" >
     
-<TextView 
+<!-- <TextView 
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="FRIEND REQUESTS"
       android:textStyle="bold"
-    />
-<ListView 
+    />-->
+<!--  <ListView 
     android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	android:id="@+id/fr_req"
-    />
+    android:visibility="invisible"
+    /> -->
 <TextView 
-      android:layout_width="match_parent"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="MY FRIENDS"
+ 		android:layout_gravity="center"
+      android:text="MY FRIENDS"	
       android:textStyle="bold"
+      android:textColor="#000000"
     />
+
 <ListView 
     android:layout_width="match_parent"
 	android:layout_height="wrap_content"
+	android:layout_gravity="center"
 	android:id="@+id/my_frnds"
+
     />
 <Button
     android:layout_width="wrap_content"
@@ -32,5 +39,7 @@
     android:layout_gravity="center"
     android:id="@+id/addfrnd"
     android:text="ADD FRIEND"
+  	    android:background="@drawable/buttony"
+    
     />
     </LinearLayout>

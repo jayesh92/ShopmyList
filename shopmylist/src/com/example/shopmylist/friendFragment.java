@@ -26,7 +26,7 @@ public class friendFragment extends Fragment{
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		View v = inflater.inflate(R.layout.friend_fragment, container, false);
-		fr_req = new ArrayList<String>();
+/*		fr_req = new ArrayList<String>();
 		fr_req.add("Seeta");
 		fr_req.add("Geeta");
 		ListView fr_reqq = (ListView) v.findViewById(R.id.fr_req);
@@ -66,7 +66,7 @@ public class friendFragment extends Fragment{
 			}
 		});
 		
-		//ArrayList<String> my_frnds = new ArrayList<String>();
+*/		//ArrayList<String> my_frnds = new ArrayList<String>();
 		ArrayList<String> my_frnds = ((MainActivity)getActivity()).my_frnd;
 		/*my_frnds.add("Lahori");
 		my_frnds.add("Ballu");
@@ -112,7 +112,5 @@ public class friendFragment extends Fragment{
 		return v;
 		
 	}
-	
-	
 	
 }

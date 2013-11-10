@@ -12,7 +12,6 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 public class DisplayList extends Activity {
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,15 +21,15 @@ public class DisplayList extends Activity {
 		Intent myintent=getIntent();
 		String flag=myintent.getStringExtra("flag");
 		Log.d("flagis","myflag"+flag);
-		TextView tv=(TextView)findViewById(R.id.textview1);
+		TextView tv1=(TextView)findViewById(R.id.textview1);
+		TextView tv2=(TextView)findViewById(R.id.textview2);
 		if(flag.equals("1")){
-			tv.setText("shoping list will be updated");
+			tv1.setText("Onion");
+			tv2.setText("Capsicum");
 		}
 		else if(flag.equals("2")){
-			tv.setText("call the person");
-		}
-		else{
-			tv.setText("unknow action to be taken");
+			tv1.setText("call the person");
+			tv2.setText("msg the person");
 		}
 	}
 

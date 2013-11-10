@@ -88,11 +88,11 @@ public class MainActivity extends Activity {
 				Object path = message.obj;
 				if(message.arg1 == RESULT_OK && path !=null)
 				{
-					Toast.makeText(MainActivity.this, "Downloaded "+path.toString(), Toast.LENGTH_LONG).show();
+					//Toast.makeText(MainActivity.this, "Downloaded "+path.toString(), Toast.LENGTH_LONG).show();
 				}
 				else
 				{
-					Toast.makeText(MainActivity.this, "Download Failed", Toast.LENGTH_LONG).show();
+					//Toast.makeText(MainActivity.this, "Download Failed", Toast.LENGTH_LONG).show();
 				}
 			}
 	};
