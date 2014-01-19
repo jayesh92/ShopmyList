@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.example.shopmylist;
+package com.example.domywork;
 
 public final class R {
     public static final class attr {
@@ -282,8 +282,8 @@ containing a value of this type.
         public static final int notify=0x7f0a0005;
     }
     public static final class string {
-        public static final int action_settings=0x7f06001c;
-        public static final int app_name=0x7f06001b;
+        public static final int action_settings=0x7f06001b;
+        public static final int app_name=0x7f06001a;
         /**   Title for notification shown when GooglePlayServices needs to be
         enabled for a application to work. [CHAR LIMIT=70] 
          */
@@ -378,11 +378,10 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f060013;
-        public static final int hello_world=0x7f06001d;
-        public static final int ip=0x7f06001a;
-        public static final int title_activity_landing=0x7f060020;
-        public static final int title_activity_list=0x7f06001e;
-        public static final int title_activity_map=0x7f06001f;
+        public static final int hello_world=0x7f06001c;
+        public static final int title_activity_landing=0x7f06001f;
+        public static final int title_activity_list=0x7f06001d;
+        public static final int title_activity_map=0x7f06001e;
     }
     public static final class style {
         /** 
@@ -419,9 +418,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize com.example.shopmylist:adSize}</code></td><td>
+           <tr><td><code>{@link #AdsAttrs_adSize com.example.domywork:adSize}</code></td><td>
     The size of the ad.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId com.example.shopmylist:adUnitId}</code></td><td> The ad unit ID.</td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId com.example.domywork:adUnitId}</code></td><td> The ad unit ID.</td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adUnitId
@@ -446,7 +445,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.example.shopmylist:adSize
+          @attr name com.example.domywork:adSize
         */
         public static final int AdsAttrs_adSize = 0;
         /**
@@ -462,7 +461,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.example.shopmylist:adUnitId
+          @attr name com.example.domywork:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 1;
         /** Attributes that can be used with a MapAttrs.
@@ -471,20 +470,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing com.example.shopmylist:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.example.shopmylist:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.example.shopmylist:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt com.example.shopmylist:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom com.example.shopmylist:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType com.example.shopmylist:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass com.example.shopmylist:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.example.shopmylist:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.example.shopmylist:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.example.shopmylist:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls com.example.shopmylist:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.example.shopmylist:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.example.shopmylist:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.example.shopmylist:zOrderOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing com.example.domywork:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.example.domywork:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.example.domywork:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt com.example.domywork:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom com.example.domywork:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType com.example.domywork:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass com.example.domywork:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.example.domywork:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.example.domywork:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.example.domywork:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls com.example.domywork:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.example.domywork:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.example.domywork:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.example.domywork:zOrderOnTop}</code></td><td></td></tr>
            </table>
            @see #MapAttrs_cameraBearing
            @see #MapAttrs_cameraTargetLat
@@ -508,7 +507,7 @@ containing a value of this type.
             0x7f01000e, 0x7f01000f
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -518,11 +517,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:cameraBearing
+          @attr name com.example.domywork:cameraBearing
         */
         public static final int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -532,11 +531,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:cameraTargetLat
+          @attr name com.example.domywork:cameraTargetLat
         */
         public static final int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -546,11 +545,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:cameraTargetLng
+          @attr name com.example.domywork:cameraTargetLng
         */
         public static final int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -560,11 +559,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:cameraTilt
+          @attr name com.example.domywork:cameraTilt
         */
         public static final int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -574,11 +573,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:cameraZoom
+          @attr name com.example.domywork:cameraZoom
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#mapType}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -594,11 +593,11 @@ containing a value of this type.
 <tr><td><code>terrain</code></td><td>3</td><td></td></tr>
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.example.shopmylist:mapType
+          @attr name com.example.domywork:mapType
         */
         public static final int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -608,11 +607,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:uiCompass
+          @attr name com.example.domywork:uiCompass
         */
         public static final int MapAttrs_uiCompass = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -622,11 +621,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:uiRotateGestures
+          @attr name com.example.domywork:uiRotateGestures
         */
         public static final int MapAttrs_uiRotateGestures = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -636,11 +635,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:uiScrollGestures
+          @attr name com.example.domywork:uiScrollGestures
         */
         public static final int MapAttrs_uiScrollGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -650,11 +649,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:uiTiltGestures
+          @attr name com.example.domywork:uiTiltGestures
         */
         public static final int MapAttrs_uiTiltGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -664,11 +663,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:uiZoomControls
+          @attr name com.example.domywork:uiZoomControls
         */
         public static final int MapAttrs_uiZoomControls = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -678,11 +677,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:uiZoomGestures
+          @attr name com.example.domywork:uiZoomGestures
         */
         public static final int MapAttrs_uiZoomGestures = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -692,11 +691,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:useViewLifecycle
+          @attr name com.example.domywork:useViewLifecycle
         */
         public static final int MapAttrs_useViewLifecycle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.shopmylist.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link com.example.domywork.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -706,7 +705,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.shopmylist:zOrderOnTop
+          @attr name com.example.domywork:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 13;
     };

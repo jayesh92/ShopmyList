@@ -5,5 +5,9 @@
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
         android:title="MAP MY LISTS"/>
-
+<item
+        android:id="@+id/track_off"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="TRACK OFF"/>
 </menu>

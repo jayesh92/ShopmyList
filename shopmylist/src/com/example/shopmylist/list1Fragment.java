@@ -37,10 +37,14 @@ import android.widget.Toast;
 
 public class list1Fragment extends Fragment{
 	private String jsonResult;
-	private String url2 = "http://10.0.2.2/angelhack/insert_user_list.php";
+	public String url2="";
+	//private String url2 = "http://10.0.2.2/angelhack/insert_user_list.php";
+	
 	public list l;
 	
 	public void accessWebService2(String s1,String s2,String s3,String s4,String s5) {
+		url2="http://"+getString(R.string.ip)+"/angelhack/insert_user_list.php";
+		
 		JsonWriteTask2 task = new JsonWriteTask2();
 		// passes values for the urls string array
 		Log.d("Before","task.execute2");	

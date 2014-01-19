@@ -40,9 +40,13 @@ public class friendFragment extends Fragment{
 	ArrayList<String> fr_req ;
 	ArrayList<String> my_frnds ;
 	String frn_name;
-	private String url6 = "http://10.0.2.2/angelhack/find_friend.php";
+	public String url6="";
+	//private String url6 = "http://10.0.2.2/angelhack/find_friend.php";
+	    
 	public  String jsonResult6;
 	public void accessWebService6(String s1) {
+		url6="http://"+getString(R.string.ip)+"/angelhack/find_friend.php";
+		
 		JsonWriteTask6 task = new JsonWriteTask6();
 		// passes values for the urls string array
 		Log.d("Before","task.execute2");	
@@ -125,7 +129,7 @@ public class friendFragment extends Fragment{
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+		Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		View v = inflater.inflate(R.layout.friend_fragment, container, false);
 		/*fr_req = new ArrayList<String>();

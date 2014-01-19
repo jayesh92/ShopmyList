@@ -40,14 +40,21 @@ public class MainActivity extends Activity {
 	SparseArray<list_parent> parents = new SparseArray<list_parent>(); 
 	MyExpandableListAdapter adapter;
 	ArrayList<String> my_frnd=new ArrayList<String>();
+	Intent intentser;
 	public int flag;
+	public boolean stopped;
 	HashMap<String, ArrayList<list>> h = new HashMap<String, ArrayList<list>>();
 	Activity ctx;
-
+	
 	public String jsonResult;
 	public String jsonResult1;
-	public String url = "http://10.0.2.2/angelhack/view_friends.php";
-	public String url1 = "http://10.0.2.2/angelhack/view_lists.php";
+	//public String url = "http://10.0.2.2/angelhack/view_friends.php";
+	//private String url="http://"+getString(R.string.ip)+"/angelhack/view_friends.php";
+	
+	//public String url1 = "http://10.0.2.2/angelhack/view_lists.php";
+	
+	public String url1="";
+	public String url="";
 	public ActionBar actionbar;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +62,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		actionbar = getActionBar();
 		actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+		 url="http://"+getString(R.string.ip)+"/angelhack/view_friends.php";
+		 url1="http://"+getString(R.string.ip)+"/angelhack/view_lists.php";
 		//setContentView(R.layout.activity_main);
 		flag=0;
 		adapter = new MyExpandableListAdapter(this, parents);
@@ -64,14 +73,14 @@ public class MainActivity extends Activity {
 		h.put("AllLists", new ArrayList<list>());
 		ctx=MainActivity.this;
 		accessWebService();
-		
+		stopped=false;
 		//abhishek
-		Intent intent = new Intent(this, DownloadService.class);
+		intentser = new Intent(this, DownloadService.class);
 		Messenger messenger = new Messenger(handler);
-		intent.putExtra("MESSENGER", messenger);
-		intent.setData(Uri.parse("http://developer.android.com/guide/components/services.html"));
-		intent.putExtra("urlpath","http://developer.android.com/guide/components/services.html");
-		startService(intent);
+		intentser.putExtra("MESSENGER", messenger);
+		intentser.setData(Uri.parse("http://developer.android.com/guide/components/services.html"));
+		intentser.putExtra("urlpath","http://developer.android.com/guide/components/services.html");
+		startService(intentser);
 		//aend
 		
 		//accessWebService1();
@@ -373,6 +382,22 @@ public class MainActivity extends Activity {
 			//Start Mittal/Sagar ki Activity
 			Intent intent=new Intent(MainActivity.this,MapActivity.class);
 			startActivity(intent);
+		}
+		else if(item.getItemId()==R.id.track_off)
+		{
+			if(!stopped)
+			{
+				stopped=true;
+				item.setTitle("TRACK ON");
+				stopService(intentser);
+			
+			}
+			else
+			{
+				stopped=false;
+				item.setTitle("TRACK OFF");
+				startService(intentser);
+			}
 		}
 		return super.onOptionsItemSelected(item);
 

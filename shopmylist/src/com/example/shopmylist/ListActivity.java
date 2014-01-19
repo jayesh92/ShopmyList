@@ -37,9 +37,14 @@ import android.widget.Toast;
 
 public class ListActivity extends Activity {
 	private String jsonResult;
-	private String url3 = "http://10.0.2.2/angelhack/insert_user_list_items.php";
+	public String url3="";
+	//private String url3 = "http://10.0.2.2/angelhack/insert_user_list_items.php";
+	
+	
 	
 	public void accessWebService3(String s1,String s2,String s3,String s4) {
+		url3="http://"+getString(R.string.ip)+"/angelhack/insert_user_list_items.php";
+		
 		JsonWriteTask3 task = new JsonWriteTask3();
 		// passes values for the urls string array
 		Log.d("Before","task.execute2");	
